@@ -6,8 +6,12 @@ buildscript {
     dependencies {
         classpath "com.github.jengelman.gradle.plugins:shadow:2.0.4"
         classpath "io.spring.gradle:dependency-management-plugin:1.0.5.RELEASE"
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.31"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.41"
     }
+}
+
+plugins {
+    id 'com.google.cloud.tools.jib' version '0.9.6'
 }
 
 version "0.1"
